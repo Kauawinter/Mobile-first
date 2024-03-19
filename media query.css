@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@media screen and (min-width:769px) and (max-width:1440px) {
+    img {
+        height: 150px;
+        width: 150px;
+    }
+
+    body {
+        background-image: url('imagens/back-pc.jpg');
+    }
+
+    main {
+        background-color: rgba(255, 255, 255, 0.726);
+        border-radius: 15px 15px 15px;
+        height: 200px;
+        width: 450px;
+        margin: auto;
+
+    }
+
+    img#celular {display: none;}
+    img#impressora {display: none;}
+    img#pc {display: block; margin: auto;}
+    img#tablet {display: none;}
+    img#tv {display: none;}
+
+}
+
+@media print {
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-image: url('imagens/back-print.jpg');
+    }
+
+    img#celular {display: none;}
+    img#impressora {display: block; margin: auto;}
+    img#pc {display: none;}
+    img#tablet {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    body {
+        background-image: url('imagens/back-tablet.jpg');
+
+    }
+
+    img#celular {display: none;}
+    img#impressora {display: none;}
+    img#pc {display: none;}
+    img#tablet {display: block; margin: auto;}
+    img#tv {display: none;}
+
+}
+
+@media screen and (min-width:1441px) {
+    body {
+        background-image: url('imagens/back-tv.jpg');
+    }
+
+    img#celular {display: none;}
+    img#impressora {display: none;}
+    img#pc {display: none;}
+    img#tablet {display: none;}
+    img#tv {display: block; margin: auto;}
+    
+}
